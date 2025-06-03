@@ -1,37 +1,74 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f4f8;
-    text-align: center;
-    padding: 50px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 400px;
-    margin: auto;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+  animation: fadeIn 1s ease;
 }
+
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #3498db;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
+  margin-bottom: 15px;
 }
+
 h1 {
-    margin: 20px 0 10px;
-    color: #2c3e50;
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
 }
-h2 {
-    color: #2980b9;
+
+.title {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
 }
-p {
-    font-size: 16px;
-    color: #34495e;
+
+.skills {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
 }
+
 a {
-    color: #2980b9;
-    text-decoration: none;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+}
+
+.social-buttons a {
+  display: inline-block;
+  margin-top: 15px;
+  background: #1877f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.social-buttons a:hover {
+  background: #0e5cc8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
